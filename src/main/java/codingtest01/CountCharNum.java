@@ -28,7 +28,7 @@ import java.util.Scanner;
  * 2
  */
 
-public class countCharNum {
+public class CountCharNum {
     public int solution(String str, char t){
         int answer = 0;
         str = str.toLowerCase();
@@ -49,7 +49,7 @@ public class countCharNum {
     }
 
     public static void main(String[] args) {
-        countCharNum T = new countCharNum();
+        CountCharNum T = new CountCharNum();
 
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
