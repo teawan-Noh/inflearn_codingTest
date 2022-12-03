@@ -29,12 +29,13 @@ public class WordInSentence {
     public String Solution(String str){
 
         String[] strArr = str.split(" ");
-        ArrayList<String> arr = new ArrayList<>(Arrays.asList(strArr));
+
+        //ArrayList<String> arr = new ArrayList<>(Arrays.asList(strArr));
         // arr.addAll(strArr)을 위의 코드와 같이 사용할 수 있다.
 
-        String answer = arr.get(0);
+        String answer = strArr[0];
 
-        for (String x : arr) {
+        for (String x : strArr) {
             if(x.length() > answer.length()){
                 answer = x;
             }
