@@ -1,7 +1,5 @@
-package main.java.codingtest01;
+package main.java.ch01;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
