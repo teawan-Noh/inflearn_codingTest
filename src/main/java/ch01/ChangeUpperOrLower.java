@@ -1,4 +1,4 @@
-package main.java.codingtest01;
+package main.java.ch01;
 
 import java.util.Scanner;
 
@@ -26,7 +26,6 @@ import java.util.Scanner;
  */
 
 public class ChangeUpperOrLower {
-
     public String Solution(String str){
 
 //        char[] chars = str.toCharArray();
