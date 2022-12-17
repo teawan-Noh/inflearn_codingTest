@@ -18,7 +18,6 @@ package main.java.ch01;
  * kset
  */
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DeduplicateWords {
