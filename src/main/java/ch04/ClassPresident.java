@@ -26,28 +26,18 @@ import java.util.Scanner;
  * C
  */
 public class ClassPresident {
-    public String Soulution(String str, int x){
-        String answer = "";
-        HashMap<Character, Integer> map = new HashMap<>(5);
-        map.put('A', 0);
-        map.put('B', 0);
-        map.put('C', 0);
-        map.put('D', 0);
-        map.put('E', 0);
+    public char Soulution(String str, int x){
+        char answer = ' ';
+        HashMap<Character, Integer> map = new HashMap<>();
 
         for (char c : str.toCharArray()){
-            int tmp = map.get(c);
-            tmp++;
-            map.replace(c, tmp);
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        Object o;
-        int max = 0;
-        for (int i=0; i < map.size(); i++){
-            o = map.keySet().toArray()[i];
-            int i1 = map.get(o);
-            if(max < i1){
-                max = i1;
-                answer = map.keySet().toArray()[i].toString();
+        int max = Integer.MIN_VALUE;
+        for (char key : map.keySet()){
+            if(map.get(key) > max){
+                max = map.get(key);
+                answer = key;
             }
         }
         return answer;
