@@ -29,9 +29,8 @@ public class PalindromeString {
         int rt = str.length() - 1;
 
         while(lt < rt){
-            System.out.println(str.charAt(lt) + " " + str.charAt(rt));
             if(str.charAt(lt) != str.charAt(rt)){
-                return "No";
+                return "NO";
             }
             lt++;
             rt--;
